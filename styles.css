@@ -1,0 +1,153 @@
+body{
+    background-color: rgba(237,242,248,255);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+} 
+
+#main-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#quotes {
+    position: absolute;
+    right: 7%;
+    top: 0;
+    z-index: 1;
+}
+
+.con {
+    padding: 15px; /* Estaría bueno hacerlo con porcentajes */
+    border-radius: 15px;
+    margin: 15px 15px 15px 15px; /* top bottom left right */
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+}
+
+h2 {
+    margin: 25px 0 25px 0;
+    position: relative;
+    z-index: 3;
+}
+
+.identif img {
+    border-radius: 50px; /* para hacerlas circulares, se pone 50%, no px */
+    height: 35px;
+}
+
+.identif {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+    position: relative;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+h3, h4 {
+    margin: 5px 0px 0px 5px;
+}
+
+h4 {
+    color: rgba(156,165,182,255,);
+    opacity: 0.5;
+}
+
+p {
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.light {
+    background-color: white;
+    color: rgba(82,89,97,255);
+    
+}
+
+.light p {
+    color: rgba(133,142,146,255);
+}
+
+.light img {
+    border: 3px rgba(205,206,207,255) solid;
+}
+
+.dark {
+    color: white;
+}
+
+.dark p {
+    color: rgba(156,165,182,255);
+}
+
+#con1 {
+    background-color: rgba(115,63,200,255);
+    position: relative;
+    z-index: 0;
+}
+
+#con1 .identif > img {
+    border: 3px rgba(156,123,213,255) solid;
+}
+
+#con2 {
+    background-color: rgba(73,85,107,255);
+}
+
+#con2 .identif > img {
+    border: 3px rgba(235,238,240,255) solid;
+}
+
+#con4 {
+    background-color: rgba(24,32,45,255);
+}
+
+#con4 .identif > img {
+    border: 3px rgba(103,76,156,255) solid;
+}
+
+@media(min-width: 576px){
+    #main-container {
+        flex-direction: row;
+        justify-content: normal;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+    .con {
+        padding: 25px;
+    }
+
+   #con5 {
+        flex-basis: 20%;
+        margin-left: 0%;
+    }
+
+    #conjunto {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #row1, #row2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #con1 {
+        flex-basis: 66%;
+    }
+
+    #con2 {
+        flex-basis: 33%;
+    }
+}
